@@ -69,8 +69,8 @@ module.exports.estudiantesCreate = function (req, res) {
  * @return {[type]} void - response object
  */
 module.exports.estudiantesListByIdGrupo = function (req, res) {
-	let idGrupo = req.params.idGrupo;
-	Estudiante.find({"grupo":{"$regex": grupo}},(err, estudiantes) => {
+	let namegrupo = req.params.namegrupo;
+	Estudiante.find({"grupo":{"$regex": namegrupo}},(err, estudiantes) => {
 		if (err) res.send(err);
 	res.json(estudiantes);
 });
