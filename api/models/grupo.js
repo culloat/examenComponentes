@@ -5,7 +5,7 @@
 let mongoose = require('mongoose');
 
 let	grupoSchema = new mongoose.Schema({
-	name: String
+	namegrupo: String
 });
 
 // module.exports = mongoose.model('Grupo', grupoSchema);

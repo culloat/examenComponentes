@@ -29,9 +29,9 @@ apiRouter.route('/estudiantes')
 	.get(ctrlColegio.estudiantesListAll);
 
 // on routes that end in /estudiantes/:idGrupo
-apiRouter.route('/estudiantes/:idGrupo')
+apiRouter.route('/estudiantes/:namegrupo')
 	// get a estudiantes by idGrupo (http://localhost:8080/api/estudiantes/:idGrupo)
-	.get(ctrlColegio.estudiantesListByIdGrupo)
+	.get(ctrlColegio.estudiantesListByNameGrupo)
 
 	
 
